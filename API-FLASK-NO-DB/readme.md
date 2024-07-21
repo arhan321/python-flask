@@ -1,12 +1,16 @@
-# belajar freamwork python
+# belajar bikin rest api crud python-flask tanpa db
 ```
-flask
+datanya di simpan di memory
 ```
-# system container
+# informasi ROUTE : 
 ```
-docker
+@app.route('/create', methods=['POST'])
+@app.route('/users', methods=['GET'])
+@app.route('/users/<int:user_id>', methods=['GET'])
+@app.route('/users/<int:user_id>', methods=['PUT'])
+@app.route('/users/<int:user_id>', methods=['DELETE'])
 ```
 # webserver
 ```
-nginx
+NGINX
 ```
